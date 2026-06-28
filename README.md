@@ -1,10 +1,10 @@
-🧠 AI Modul Manager: Semantic Search & Auto-Classification
-
+** AI Modul Manager: Semantic Search & Auto-Classification
+**
 Proyek ini adalah implementasi terapan dari Natural Language Processing (NLP) dan Computer Vision (CV) untuk memecahkan masalah manajemen arsip di dunia pendidikan (khususnya Modul Ajar Kurikulum Merdeka).
 
 Sistem ini mengubah cara pencarian tradisional yang kaku (lexical search) menjadi pencarian cerdas berbasis makna (semantic search), serta mengotomatisasi klasifikasi dokumen fisik ke dalam folder digital.
 
-✨ Fitur Utama
+** Fitur Utama**
 
 Ingesti Dokumen Otomatis (Computer Vision / OCR)
 Mengekstrak teks dari dokumen PDF atau hasil scan modul ajar secara otomatis.
@@ -18,7 +18,7 @@ Mencari dokumen tidak berdasarkan kecocokan huruf (seperti Ctrl+F), melainkan be
 Dashboard Interaktif
 Antarmuka web (SPA) modern berbasis Tailwind CSS yang responsif dan mudah digunakan oleh guru/admin.
 
-🛠️ Arsitektur & Teknologi
+** Arsitektur & Teknologi**
 
 Proyek ini menggunakan arsitektur Client-Server yang dipisahkan secara hybrid:
 
@@ -40,7 +40,7 @@ AI / NLP Model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (Mod
 
 Ekstraksi PDF: pypdf / EasyOCR.
 
-⚙️ Alur Kerja Sistem (Workflow)
+ Alur Kerja Sistem (Workflow)
 
 Upload: User mengunggah file .pdf via Web UI.
 
@@ -52,7 +52,7 @@ Penyimpanan: Vektor dan metadata disimpan ke dalam collection di ChromaDB.
 
 Penelusuran (Kueri): Saat user mencari kata kunci, kueri diubah menjadi vektor. Sistem menghitung Cosine Similarity antara kueri dan seluruh dokumen di database untuk memunculkan Top-5 hasil terdekat.
 
-🚀 Cara Menjalankan Proyek (Setup)
+** Cara Menjalankan Proyek (Setup)**
 
 Karena proyek ini memanfaatkan GPU/RAM besar secara gratis dari Google Colab untuk pemrosesan AI, ikuti langkah berikut:
 
@@ -83,7 +83,7 @@ Simpan file HTML tersebut.
 
 Buka index.html di browser Anda (Chrome/Firefox/Edge). Sistem siap digunakan!
 
-🧠 Konsep Akademik yang Diunggulkan
+ **Konsep Akademik yang Diunggulkan**
 
 Repositori ini juga mendemonstrasikan penyelesaian tantangan teknis dalam NLP:
 
@@ -91,12 +91,12 @@ Threshold Tuning (Dilema Ambang Batas): Implementasi logika pencarian dinamis. J
 
 Multilingual Context: Penggunaan versi multilingual-MiniLM-L12 membuktikan bahwa model mampu memahami relasi semantik bahasa Indonesia yang tidak kaku.
 
-📝 Catatan Penting
+ **Catatan Penting**
 
 Sesi Colab (Volatile): Karena database (ChromaDB) berjalan di atas RAM sesi Google Colab, seluruh data modul yang diunggah akan hilang saat sesi Colab dihentikan atau timeout. Sistem ini bersifat Proof of Concept (Prototipe). Untuk tahap production, ChromaDB perlu di-host secara permanen.
 
-👥 Kontributor
+ **Kontributor**
 
-[Nama Anda] - Peneliti & Pengembang Utama
+Sugianto - Peneliti & Pengembang Utama
 
 Dibuat sebagai bagian dari Tugas / Proyek Akhir Mata Kuliah NLP & Computer Vision.
